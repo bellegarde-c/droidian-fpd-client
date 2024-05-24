@@ -19,10 +19,12 @@ Build-Depends: debhelper-compat (= 13),
                bash,
                dh-exec
 
-Package: droidian-fpd-client
+Package: droidian-fpd-client-legacy
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, 
-         libbatman-wrappers,
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: droidian-fpd-client
+Replaces: droidian-fpd-client
+Breaks: droidian-fpd-client
 Description: Droidian fingerprint client
   Droidian fingerprint enrollment and client.
 

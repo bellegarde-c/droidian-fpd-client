@@ -60,9 +60,6 @@ install(TARGETS pam_fpd
         LIBRARY DESTINATION lib/${ARCH_TRIPLET}/security
         PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ)
 
-install(FILES fpdlistener.service DESTINATION lib/systemd/user
-        PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ)
-
 install(FILES droidian-fpd-client.conf DESTINATION share/droidian-fpd-client
         PERMISSIONS OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ)
 
