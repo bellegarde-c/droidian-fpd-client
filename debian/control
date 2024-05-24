@@ -5,9 +5,7 @@ Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Build-Depends: debhelper-compat (= 13),
                qtbase5-dev | qtbase5-gles-dev,
                cmake,
-               g++,
                libc6-dev,
-               libupower-glib-dev,
                bash,
                dh-exec
 
