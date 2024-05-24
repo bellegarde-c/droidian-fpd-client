@@ -7,7 +7,6 @@ Build-Depends: debhelper-compat (= 13),
                cmake,
                libc6-dev,
                bash,
-               dh-exec
 
 Package: droidian-fpd-client-legacy
 Architecture: any
