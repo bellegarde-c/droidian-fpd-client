@@ -4,18 +4,10 @@ Priority: optional
 Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Build-Depends: debhelper-compat (= 13),
                qtbase5-dev | qtbase5-gles-dev,
-               qtdeclarative5-dev,
-               qtquickcontrols2-5-dev,
-               qtchooser,
-               qtbase5-dev-tools,
                cmake,
                g++,
                libc6-dev,
-               libpam0g-dev,
-               batman-dev,
-               libwayland-dev,
                libupower-glib-dev,
-               libbatman-wrappers,
                bash,
                dh-exec
 
@@ -27,20 +19,3 @@ Replaces: droidian-fpd-client
 Breaks: droidian-fpd-client
 Description: Droidian fingerprint client
   Droidian fingerprint enrollment and client.
-
-Package: droidian-fpd-gui
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         droidian-fpd-client,
-         qml-module-qtquick-controls,
-         qml-module-qtquick-controls2,
-         libbatman-wrappers,
-Description: Droidian fingerprint gui
-  Droidian fingerprint gui
-
-Package: libpam-fpd
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         droidian-fpd-client,
-Description: Droidian fingerprint pam
-  Droidian fingerprint pam module
